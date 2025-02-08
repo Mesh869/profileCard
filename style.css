@@ -1,0 +1,267 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.logo{
+    color: #2a2b37;
+}
+
+
+
+body{
+    position: relative; 
+    background: #171722;
+    min-height: 100vh;
+}
+
+body::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(#f00,#f0f);
+    clip-path: circle(30% at right 70%);
+}
+body::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(#2196f3,#e91e63);
+    clip-path: circle(20% at left 10%);
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.card-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.card-three{
+   border: 1px solid #2a2b37;
+   width: 800px;
+   height: 400px;
+   box-shadow: 20px 20px 50px rgba(0,0,0,0.5);
+   border-radius: 15px;
+   margin: 140px auto;
+   border-top: 1px solid rgba(255,255,255,0.5);
+   border-left: 1px solid rgba(255,255,255,0.5);
+
+
+   z-index: 1;
+   background: rgba(255,255,255,0.1);
+   overflow: hidden;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   flex-direction: row-reverse;
+   cursor: pointer;
+   backdrop-filter: blur(8px);
+   color: #fff;
+}
+
+
+
+ .card-three.card-img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius:"50px" ;
+    
+    width: 100%;
+}
+
+
+ .card-desc {
+    display: flex;
+    flex-direction: column;
+    margin:  auto;
+    text-align: center;
+}
+
+.card-desc > div{
+    margin-top: 80px;
+}
+
+
+.card-desc h3{
+   padding-bottom: 15px;  
+   font-size: 20px;
+   color: linear-gradient(#2196f3,#e91e63);
+} 
+
+.card-desc h4{
+   padding-bottom: 10px;  
+   font-size: 20px;
+   color: linear-gradient(#2196f3,#e91e63);
+} 
+
+
+
+.card-socials{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.card-socials .socials{
+    margin-bottom: 15px;
+}
+
+.card-socials .socials i{
+    color: #f0f;
+    padding:  0px  10px;
+    transition: .6s ease;
+}
+.card-socials .socials i:hover{
+  font-size: 30px;
+}
+
+.card-socials .email{
+    margin-bottom: 20px;
+}
+
+.cta{
+    margin-top: 30px;
+}
+
+.cta a{
+    text-decoration: none;
+    border: 1px solid #f00;
+    padding: 10px 60px;
+    border-radius: 5px;
+    color: #f0f;
+}
+.cta a:hover{
+  background: #2a2b37;
+  color: #a1a1b1;
+}
+
+
+.time{
+    display: flex;
+    align-items: center;
+    color: #fff;
+    justify-content: center;
+}
+
+
+@media screen and (max-width: 1150px) {
+
+    .card-three{
+      width: 600px;
+      display: flex;
+       align-items: center;
+       justify-content: space-between;
+       color: #fff;
+    }
+
+    
+    .card-three .card-desc {
+        display: flex;
+        flex-direction: column;
+        margin: 80px auto;
+    }
+}
+
+
+@media screen and (max-width: 650px) {
+    
+    .card-three{
+      width: 430px;
+      height: 550px;
+      display: inline-block;
+       align-items: center;
+       justify-content: center;
+       margin: 90px  auto;
+       padding-top: 50px;
+    }
+   
+
+    .card-img{
+        display: none;
+    }
+
+    .card-three .card-desc {
+        display:flex;
+        align-items: center;
+        flex-direction: column; 
+        color: #a1a1b1;
+        margin: 70px auto;
+        transform: .5s ease-in;
+    }
+
+
+    .card-desc > div{
+        margin-top: 100px;
+    }
+
+    .card-desc h3:hover{
+       color: #fff;
+    }
+
+    .card-desc h3{
+       padding-bottom: 20px;
+       
+    }
+}
+
+
+.time{
+    display: flex;
+    align-items: center;
+    color: #fff;
+    justify-content: center;
+}
+
+
+@media screen and (max-width: 500px) {
+    
+    .card-three{
+      width: 350px;
+      height: 480px;
+      display: inline-block;
+       align-items: center;
+       justify-content: center;
+       margin: 90px auto;
+    }
+
+    .card-three .card-desc {
+        display: flex;
+        flex-direction: column;
+        margin: 120px auto;
+    }
+
+    .card-img{
+        display: none;
+    }
+
+    .card-three .card-desc {
+        margin: 40px auto;
+    }
+
+
+    .card-desc > div{
+        margin-top: 90px;
+    }
+
+}
+
