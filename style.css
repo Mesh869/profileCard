@@ -163,6 +163,12 @@ body::after{
     justify-content: center;
 }
 
+.copyright{
+    color: #fff;
+    text-align: center;
+    margin-top: 10px;
+}
+
 
 @media screen and (max-width: 1150px) {
 
